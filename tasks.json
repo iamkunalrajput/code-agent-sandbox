@@ -1,0 +1,7 @@
+[
+  {"task": "Print the sum of all primes below 1000.", "expect": "76127"},
+  {"task": "Print the 30th Fibonacci number (F1=1, F2=1).", "expect": "832040"},
+  {"task": "Print the number of words in this sentence: 'the quick brown fox jumps over the lazy dog'.", "expect": "9"},
+  {"task": "Print the factorial of 20.", "expect": "2432902008176640000"},
+  {"task": "Print the reverse of the string 'sandbox'.", "expect": "xobdnas"}
+]
