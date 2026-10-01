@@ -1,7 +1,82 @@
 [
-  {"task": "Print the sum of all primes below 1000.", "expect": "76127"},
-  {"task": "Print the 30th Fibonacci number (F1=1, F2=1).", "expect": "832040"},
-  {"task": "Print the number of words in this sentence: 'the quick brown fox jumps over the lazy dog'.", "expect": "9"},
-  {"task": "Print the factorial of 20.", "expect": "2432902008176640000"},
-  {"task": "Print the reverse of the string 'sandbox'.", "expect": "xobdnas"}
+ {
+  "task": "Print the sum of all primes below 1000. Print only the answer.",
+  "expect": "76127"
+ },
+ {
+  "task": "Print the 30th Fibonacci number (F1=1, F2=1). Print only the answer.",
+  "expect": "832040"
+ },
+ {
+  "task": "Print the number of words in this sentence: 'the quick brown fox jumps over the lazy dog'. Print only the answer.",
+  "expect": "9"
+ },
+ {
+  "task": "Print the factorial of 20. Print only the answer.",
+  "expect": "2432902008176640000"
+ },
+ {
+  "task": "Print the reverse of the string 'sandbox'. Print only the answer.",
+  "expect": "xobdnas"
+ },
+ {
+  "task": "Print the number of distinct arrangements of the letters in 'mississippi'. Print only the answer.",
+  "expect": "34650"
+ },
+ {
+  "task": "Print the sum of the digits of 2**1000. Print only the answer.",
+  "expect": "1366"
+ },
+ {
+  "task": "Print the largest palindrome that is a product of two 3-digit numbers. Print only the answer.",
+  "expect": "906609"
+ },
+ {
+  "task": "Print how many ways 200 pence can be made from coins of 1, 2, 5, 10, 20, 50, 100 and 200 pence. Print only the answer.",
+  "expect": "73682"
+ },
+ {
+  "task": "Print the starting number below 100000 that produces the longest Collatz chain. Print only the answer.",
+  "expect": "77031"
+ },
+ {
+  "task": "Print the weekday name (e.g. Monday) of 2000-02-29. Print only the answer.",
+  "expect": "Tuesday"
+ },
+ {
+  "task": "Print the number of days between 2024-01-15 and 2025-03-01. Print only the answer.",
+  "expect": "411"
+ },
+ {
+  "task": "Parse the JSON string '{\"a\": [1, 2, {\"b\": 3}], \"c\": 4}' and print the sum of every number in it, at any depth. Print only the answer.",
+  "expect": "10"
+ },
+ {
+  "task": "Print the Roman numeral for 1994. Print only the answer.",
+  "expect": "MCMXCIV"
+ },
+ {
+  "task": "Print how many 1 bits are in the binary form of 255. Print only the answer.",
+  "expect": "8"
+ },
+ {
+  "task": "Use numpy to print the mean of [1, 2, 3, 4]. Print only the answer.",
+  "expect": "2.5"
+ },
+ {
+  "task": "Use pandas to build a DataFrame with column x = [10, 20, 30, 40] and print the mean of x as a float. Print only the answer.",
+  "expect": "25.0"
+ },
+ {
+  "task": "Print the sum of all primes below 2 million. Print only the answer.",
+  "expect": "142913828922"
+ },
+ {
+  "task": "Print the 10001st prime number. Print only the answer.",
+  "expect": "104743"
+ },
+ {
+  "task": "Print how many valid email addresses are in this text, treating 'name@domain.tld' as valid: 'Contact a@x.com, b.c@y.org or bad@ and z@w.net today' Print only the answer.",
+  "expect": "3"
+ }
 ]

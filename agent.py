@@ -3,16 +3,16 @@ import os
 from openai import OpenAI
 
 # Any OpenAI-compatible endpoint works: Groq (free tier), Ollama (local), Gemini.
-MODEL = os.environ.get("LLM_MODEL", "llama-3.3-70b-versatile")
+MODEL = os.environ.get("LLM_MODEL", "openai/gpt-oss-120b")
 SYSTEM = ("You write Python 3 scripts. Reply with one ```python block and nothing else. "
           "Print the final answer to stdout. Only the standard library is available.")
 
 def call_llm(messages: list[dict]) -> str:
     client = OpenAI(base_url=os.environ.get("LLM_BASE_URL", "https://api.groq.com/openai/v1"),
                     api_key=os.environ.get("LLM_API_KEY", "ollama"))
-    r = client.chat.completions.create(model=MODEL, max_tokens=2000,
+    r = client.chat.completions.create(model=MODEL, max_tokens=4000,
                                        messages=[{"role": "system", "content": SYSTEM}] + messages)
-    return r.choices[0].message.content
+    return r.choices[0].message.content or ""
 
 def extract_code(text: str) -> str:
     m = re.search(r"```python\n(.*?)```", text, re.S)
